@@ -1,0 +1,156 @@
+// Fonts EN
+$en-light: enfont-light;
+$en-regular: enfont-regular;
+$en-medium: enfont-medium;
+$en-bold: enfont-bold;
+// Fonts JP
+$ja-light: jafont-light;
+$ja-regular: jafont-regular;
+$ja-medium: jafont-medium;
+$ja-bold: jafont-bold;
+
+// Color
+$black: #000;
+$white: #ffff;
+$main_color: #fff1d7;
+
+// Font Class EN
+.en-light {
+    font-family: $en-light;
+}
+.en-regular {
+    font-family: $en-regular;
+}
+.en-medium {
+    font-family: $en-medium;
+}
+.en-bold {
+    font-family: $en-bold;
+}
+
+// Font Class JA
+.en-light {
+    font-family: $ja-light;
+}
+.en-regular {
+    font-family: $ja-regular;
+}
+.en-medium {
+    font-family: $ja-medium;
+}
+.en-bold {
+    font-family: $ja-bold;
+}
+
+// Body Width
+body {
+    width: 1720px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1720px) {
+    body {
+        width: 90%;
+    }
+}
+
+// Header
+header {
+    margin: 2rem 0;
+}
+
+
+// EN Header
+.en_header {
+    font-family: $en-regular;
+    .header_wrap {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        .main_menu {
+            a {
+                position: relative;
+                margin-right: 5rem;
+                transition: .3s;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -1px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: -10px;
+                    right: 0;
+                    text-align: center;
+                    width: 0px;
+                    height: 1px;
+                    background-color: $black;
+                    transition: .3s;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    bottom: -4px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    left: 10px;
+                    right: 0;
+                    text-align: center;
+                    width: 0px;
+                    height: 1px;
+                    background-color: $black;
+                }
+                &:hover {
+                    font-family: $en-bold;
+                    &::after {
+                        width: 20px;
+                    }
+                    &::before {
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    // Language Button
+    .lang_wrap {
+        position: relative;
+        .lang_btn {
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: $black;
+            width: 3rem;
+            padding: .5rem .75rem;
+            p {
+                color: $main_color;
+                &:nth-child(3) {
+                    font-family: $ja-regular;
+                }
+            }
+        }
+        .lang_link {
+            position: absolute;
+            display: flex;
+            opacity: 0;
+            flex-direction: column;
+            top: -80px;
+            cursor: pointer;
+            transition: .3s;
+            a {
+                cursor: pointer;
+                &:first-child {
+                    margin-bottom: .5rem;
+                }
+            }
+        }
+
+        .lang_active {
+            top: 40px;
+            opacity: 1;
+            transition: .3s;
+        }
+    }
+}

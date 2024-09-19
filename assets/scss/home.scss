@@ -1,3 +1,20 @@
+// Fonts EN
+$en-light: enfont-light;
+$en-regular: enfont-regular;
+$en-medium: enfont-medium;
+$en-bold: enfont-bold;
+// Fonts JP
+$ja-light: jafont-light;
+$ja-regular: jafont-regular;
+$ja-medium: jafont-medium;
+$ja-bold: jafont-bold;
+
+// Color
+$black: #000;
+$white: #ffff;
+$main_color: #fff1d7;
+
+
 body {
     background-color: #fff1d7;
 }
@@ -5,3 +22,29 @@ body {
 p {
     font-family: enfont-regular;
 }
+
+
+// Intro SEction
+.section_1 {
+  display: flex;
+  align-items: center;
+  height: 80vh;
+  .intro_wrap {
+    background-color: $black;
+    width: 90%;
+    .name_part {
+      p {
+        color: $main_color;
+      }
+      .name {
+        font-size: 8rem;
+        font-family: $en-bold;
+      }
+      .catchphrase {
+        font-size: 2rem;
+        font-family: $en-light;
+      }
+    }
+  }
+}
+  
