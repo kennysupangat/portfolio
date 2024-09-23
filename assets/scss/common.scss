@@ -42,34 +42,26 @@ $main_color: #fff1d7;
     font-family: $ja-bold;
 }
 
-// Body Width
-body {
-    width: 1720px;
-    margin: 0 auto;
-}
-
-@media screen and (max-width: 1720px) {
-    body {
-        width: 90%;
-    }
-}
-
 // Header
 header {
     margin: 2rem 0;
 }
 
-
 // EN Header
 .en_header {
     font-family: $en-regular;
+    width: 100%;
+    
     .header_wrap {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        margin: 0 auto;
+        width: 90%;
         .main_menu {
             a {
+                font-family: $en-regular;
                 position: relative;
                 margin-right: 5rem;
                 transition: .3s;
@@ -153,4 +145,75 @@ header {
             transition: .3s;
         }
     }
+}
+
+// EN Headings
+h2 {
+    font-family: $en-bold;
+    font-size: 3rem;
+    position: relative;
+    left: 26px;
+    margin-bottom: 2rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -30px;
+        top: 10px;
+        transform: rotate(-30deg);
+        height: 10px;
+        width: 20px;
+        border-radius: 100px 100px 0 0;
+        background-color: $black;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: -26px;
+        top: 22px;
+        transform: rotate(150deg);
+        height: 10px;
+        width: 20px;
+        border-radius: 100px 100px 0 0;
+        background-color: $black;
+    }
+}
+
+h3 {
+    font-family: $en-regular;
+    font-size: 2rem;
+    position: relative;
+    left: 24px;
+    margin-bottom: 2rem;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: -24px;
+        top: 5px;
+        width: 6px;
+        height: 22px;
+        background-color: $black;
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        left: -16px;
+        top: 0;
+        width: 6px;
+        height: 22px;
+        background-color: $black;
+    }
+}
+
+// EN Text
+.text_bold {
+    font-family: $en-bold;
+    margin-bottom: 1.5rem;
+    line-height: 2;
+}
+.text_normal {
+    font-family: $en-regular;
+    margin-bottom: 2rem;
+    line-height: 2;
 }

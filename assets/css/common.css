@@ -30,30 +30,24 @@
   font-family: jafont-bold;
 }
 
-body {
-  width: 1720px;
-  margin: 0 auto;
-}
-
-@media screen and (max-width: 1720px) {
-  body {
-    width: 90%;
-  }
-}
 header {
   margin: 2rem 0;
 }
 
 .en_header {
   font-family: enfont-regular;
+  width: 100%;
 }
 .en_header .header_wrap {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin: 0 auto;
+  width: 90%;
 }
 .en_header .header_wrap .main_menu a {
+  font-family: enfont-regular;
   position: relative;
   margin-right: 5rem;
   transition: 0.3s;
@@ -131,4 +125,72 @@ header {
   top: 40px;
   opacity: 1;
   transition: 0.3s;
+}
+
+h2 {
+  font-family: enfont-bold;
+  font-size: 3rem;
+  position: relative;
+  left: 26px;
+  margin-bottom: 2rem;
+}
+h2:before {
+  content: "";
+  position: absolute;
+  left: -30px;
+  top: 10px;
+  transform: rotate(-30deg);
+  height: 10px;
+  width: 20px;
+  border-radius: 100px 100px 0 0;
+  background-color: #000;
+}
+h2:after {
+  content: "";
+  position: absolute;
+  left: -26px;
+  top: 22px;
+  transform: rotate(150deg);
+  height: 10px;
+  width: 20px;
+  border-radius: 100px 100px 0 0;
+  background-color: #000;
+}
+
+h3 {
+  font-family: enfont-regular;
+  font-size: 2rem;
+  position: relative;
+  left: 24px;
+  margin-bottom: 2rem;
+}
+h3:before {
+  content: "";
+  position: absolute;
+  left: -24px;
+  top: 5px;
+  width: 6px;
+  height: 22px;
+  background-color: #000;
+}
+h3:after {
+  content: "";
+  position: absolute;
+  left: -16px;
+  top: 0;
+  width: 6px;
+  height: 22px;
+  background-color: #000;
+}
+
+.text_bold {
+  font-family: enfont-bold;
+  margin-bottom: 1.5rem;
+  line-height: 2;
+}
+
+.text_normal {
+  font-family: enfont-regular;
+  margin-bottom: 2rem;
+  line-height: 2;
 }/*# sourceMappingURL=common.css.map */
