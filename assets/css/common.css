@@ -193,4 +193,104 @@ h3:after {
   font-family: enfont-regular;
   margin-bottom: 2rem;
   line-height: 2;
+}
+
+.main_section {
+  margin-bottom: 5rem;
+}
+
+footer {
+  width: 90%;
+  margin: 8rem auto 5rem;
+  position: relative;
+}
+footer .footer_wrap {
+  display: flex;
+  justify-content: end;
+}
+footer .footer_wrap .content_wrap {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+footer .footer_wrap .content_wrap .content {
+  margin-right: 4rem;
+}
+footer .footer_wrap .content_wrap .content p {
+  font-family: enfont-bold;
+  font-size: 16px;
+  margin-bottom: 35px;
+  position: relative;
+}
+footer .footer_wrap .content_wrap .content p:after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 5px;
+  width: 70px;
+  height: 1px;
+  background-color: #000;
+}
+footer .footer_wrap .content_wrap .content p:before {
+  content: "";
+  display: block;
+  position: relative;
+  top: 27px;
+  left: 20px;
+  width: 150px;
+  height: 1px;
+  background-color: #000;
+}
+footer .footer_wrap .content_wrap .content ul {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer_wrap .content_wrap .content ul li {
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+footer .footer_wrap .content_wrap .content:nth-child(2) {
+  margin-right: 8rem;
+}
+footer .footer_wrap .content_wrap .top_button {
+  position: relative;
+  bottom: 0;
+}
+footer .footer_wrap .content_wrap .top_button .arrow_case {
+  overflow: hidden;
+  height: 120px;
+  position: relative;
+  text-align: center;
+}
+footer .footer_wrap .content_wrap .top_button .arrow_case::before {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  background: #000;
+  -webkit-animation: sc_ani02 1.5s infinite;
+  animation: sc_ani02 1.5s infinite;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+footer .footer_wrap .content_wrap .top_button .arrow_case::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 2px;
+  height: 15px;
+  left: 4px;
+  top: -1px;
+  background-color: #000;
+  transform: rotate(-35deg);
+}
+footer .footer_wrap .content_wrap .top_button p {
+  transform: rotate(90deg);
+  font-size: 11px;
+  position: relative;
+  bottom: 3.75rem;
+  left: -15px;
 }/*# sourceMappingURL=common.css.map */
