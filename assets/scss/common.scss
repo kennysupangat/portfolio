@@ -44,13 +44,18 @@ $main_color: #fff1d7;
 
 // Header
 header {
-    margin: 2rem 0;
+    margin: 2rem auto;
+}
+
+section {
+    max-width: 1920px   ;
 }
 
 // EN Header
 .en_header {
     font-family: $en-regular;
     width: 100%;
+    max-width: 1920px;
     
     .header_wrap {
         display: flex;
@@ -316,5 +321,61 @@ footer {
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    header {
+        margin: 1rem auto;
+    }
+
+    .en_header {
+        .header_wrap {
+            .main_menu {
+                display: none;
+            }
+        }
+    }
+    h2 {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+        &::before {
+            height: 7px;
+            width: 15px;
+            left: -27px;
+            top: 9px;
+        }
+        &::after {
+            height: 7px;
+            width: 15px;
+            top: 18px;
+            left: -25px;
+        }
+    }
+    h3 {
+        font-size: 1.6rem;
+        width: fit-content;
+        left: 20px;
+        margin-bottom: 1.75rem;
+        &::before {
+            width: 4px;
+            height: 20px;
+            left: -20px;
+        }
+        &::after {
+            width: 4px;
+            height: 20px;
+            left: -14px;
+            top: -2px;
+        }
+    }
+    .text_bold {
+        line-height: 1.5;
+        margin-bottom: 1rem;
+    }
+    .text_normal {
+        font-size: 14px;
+        line-height: 2;
+        margin-bottom: 1rem;
     }
 }

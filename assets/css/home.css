@@ -12,6 +12,7 @@ p {
   align-items: center;
   height: 87vh;
   width: 100%;
+  margin: 0 auto;
   margin-bottom: 15rem;
 }
 .section_1 .intro_wrap {
@@ -21,10 +22,10 @@ p {
   bottom: 6%;
 }
 .section_1 .intro_wrap .name_part {
-  padding: 10rem 5%;
+  padding: 7vw 5vw;
 }
 .section_1 .intro_wrap .name_part h1 {
-  font-size: 7rem;
+  font-size: 6.5rem;
   font-family: enfont-bold;
   margin-bottom: 1rem;
   color: #fff1d7;
@@ -53,9 +54,7 @@ p {
   width: 2px;
   height: 100%;
   background: #000;
-  -webkit-animation: sc_ani01 1.5s infinite;
   animation: sc_ani01 1.5s infinite;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 .section_1 .scroll_here .arrow_case::after {
@@ -159,7 +158,7 @@ p {
   justify-content: space-between;
 }
 .section_3 .works .works_box_wrap .works_box {
-  width: 540px;
+  width: calc(33.3333333333% - 20px);
   margin-bottom: 4rem;
 }
 .section_3 .works .works_box_wrap .works_box .main_kv {
@@ -211,7 +210,7 @@ p {
 }
 .section_3 .works .link::before {
   content: "";
-  background-image: url("/portfolio/assets/images/arrow_right.png");
+  background-image: url("/assets/images/arrow_right.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 10px;
@@ -240,91 +239,139 @@ p {
   margin-right: 2rem;
 }
 .section_4 .contact .contact_way .linkedin {
-  background-image: url("/portfolio/assets/images/linkedin_logo.webp");
+  background-image: url("/assets/images/linkedin_logo.webp");
   background-size: 55%;
 }
 .section_4 .contact .contact_way .email {
-  background-image: url("/portfolio/assets/images/email_logo.png");
+  background-image: url("/assets/images/email_logo.png");
   background-size: 55%;
-}
-
-@-webkit-keyframes sc_ani01 {
-  0% {
-    -webkit-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
-    transform: translate(0, -100%);
-    height: 100%;
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    height: 100%;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    height: 0;
-  }
 }
 @keyframes sc_ani01 {
   0% {
-    -webkit-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
     transform: translate(0, -100%);
     height: 100%;
   }
   50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     height: 100%;
   }
   100% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    height: 0;
-  }
-}
-@-webkit-keyframes sc_ani02 {
-  0% {
-    -webkit-transform: translate(0, 100%);
-    -ms-transform: translate(0, 100%);
-    transform: translate(0, 100%);
-    height: 100%;
-  }
-  50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
-    transform: translate(0, 0);
-    height: 100%;
-  }
-  100% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     height: 0;
   }
 }
 @keyframes sc_ani02 {
   0% {
-    -webkit-transform: translate(0, 0%);
-    -ms-transform: translate(0, 0%);
     transform: translate(0, 0%);
     height: 0;
   }
   50% {
-    -webkit-transform: translate(0, 0);
-    -ms-transform: translate(0, 0);
     transform: translate(0, 0);
     height: 100%;
   }
   100% {
-    -webkit-transform: translate(0, -100%);
-    -ms-transform: translate(0, -100%);
     transform: translate(0, -100%);
     height: 100%;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .section_3 .works .works_box_wrap .works_box {
+    width: calc(50% - 20px);
+  }
+  .section_3 .works .works_box_wrap .works_box .main_kv {
+    height: 350px;
+  }
+}
+@media screen and (max-width: 1350px) {
+  .section_1 .intro_wrap {
+    width: 90%;
+  }
+  .section_1 .intro_wrap .name_part {
+    padding: 10vw 5vw;
+  }
+  .section_1 .intro_wrap .name_part h1 {
+    font-size: 8.5vw;
+  }
+  .section_3 .works .works_box_wrap .works_box .main_kv {
+    height: 25vw;
+  }
+}
+@media screen and (max-width: 1028px) {
+  .section_3 .works .works_box_wrap .works_box {
+    width: 100%;
+  }
+  .section_3 .works .works_box_wrap .works_box .main_kv {
+    height: 45vw;
+  }
+}
+@media screen and (max-width: 850px) {
+  .section_1 .intro_wrap .name_part h1 {
+    font-size: 13vw;
+  }
+  .section_2 .skill_desc .skill_box_wrap .skill_box {
+    width: 100%;
+  }
+  .section_2 .skill_desc .skill_box_wrap .skill_box li {
+    width: calc(33.3333333333% - 20px);
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box {
+    width: 100%;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box li {
+    width: calc(20% - 20px);
+    height: 14vw;
+  }
+}
+@media screen and (max-width: 800px) {
+  .section_2 .employment_desc .history {
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .section_2 .employment_desc .history .his_1 {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .section_2 .employment_desc .history .his_2 {
+    width: 14rem;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section_1 .intro_wrap {
+    width: 95%;
+  }
+  .section_1 .intro_wrap .name_part {
+    padding: 20vw 5vw;
+  }
+  .section_1 .intro_wrap .name_part h1 {
+    font-size: 15vw;
+  }
+  .section_1 .intro_wrap .name_part .catchphrase {
+    font-size: 5vw;
+  }
+  .section_2 .employment_desc .history li {
+    font-size: 14px;
+  }
+  .section_2 .skill_desc .skill_box_wrap .skill_box li {
+    width: calc(50% - 10px);
+    font-size: 14px;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box {
+    justify-content: flex-start;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box li {
+    width: calc(33.3333333333% - 10px);
+    height: 23vw;
+    margin-bottom: 3.1vw;
+    margin-right: 3.1vw;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box li:nth-child(2) .img, .section_2 .skill_desc .tools_box_wrap .tools_box li:nth-child(3) .img, .section_2 .skill_desc .tools_box_wrap .tools_box li:nth-child(4) .img, .section_2 .skill_desc .tools_box_wrap .tools_box li:nth-child(5) .img {
+    width: 47px;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box li:nth-child(3) {
+    margin-right: 0;
+  }
+  .section_2 .skill_desc .tools_box_wrap .tools_box li .img {
+    width: 28px;
   }
 }/*# sourceMappingURL=home.css.map */

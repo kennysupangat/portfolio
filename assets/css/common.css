@@ -31,12 +31,17 @@
 }
 
 header {
-  margin: 2rem 0;
+  margin: 2rem auto;
+}
+
+section {
+  max-width: 1920px;
 }
 
 .en_header {
   font-family: enfont-regular;
   width: 100%;
+  max-width: 1920px;
 }
 .en_header .header_wrap {
   display: flex;
@@ -271,9 +276,7 @@ footer .footer_wrap .content_wrap .top_button .arrow_case::before {
   width: 2px;
   height: 100%;
   background: #000;
-  -webkit-animation: sc_ani02 1.5s infinite;
   animation: sc_ani02 1.5s infinite;
-  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
 footer .footer_wrap .content_wrap .top_button .arrow_case::after {
@@ -293,4 +296,56 @@ footer .footer_wrap .content_wrap .top_button p {
   position: relative;
   bottom: 3.75rem;
   left: -15px;
+}
+
+@media screen and (max-width: 600px) {
+  header {
+    margin: 1rem auto;
+  }
+  .en_header .header_wrap .main_menu {
+    display: none;
+  }
+  h2 {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+  }
+  h2::before {
+    height: 7px;
+    width: 15px;
+    left: -27px;
+    top: 9px;
+  }
+  h2::after {
+    height: 7px;
+    width: 15px;
+    top: 18px;
+    left: -25px;
+  }
+  h3 {
+    font-size: 1.6rem;
+    width: -moz-fit-content;
+    width: fit-content;
+    left: 20px;
+    margin-bottom: 1.75rem;
+  }
+  h3::before {
+    width: 4px;
+    height: 20px;
+    left: -20px;
+  }
+  h3::after {
+    width: 4px;
+    height: 20px;
+    left: -14px;
+    top: -2px;
+  }
+  .text_bold {
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+  .text_normal {
+    font-size: 14px;
+    line-height: 2;
+    margin-bottom: 1rem;
+  }
 }/*# sourceMappingURL=common.css.map */
