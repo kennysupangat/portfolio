@@ -67,7 +67,7 @@ p {
         display: block;
         position: absolute;
         bottom: 0;
-        width: 2px;
+        width: 1px;
         height: 100%;
         background: #000;
         -webkit-animation: sc_ani01 1.5s infinite;
@@ -79,7 +79,7 @@ p {
         content: "";
         display: block;
         position: absolute;
-        width: 2px;
+        width: 1px;
         height: 15px;
         left: 4px;
         bottom: -1px;
@@ -437,6 +437,7 @@ p {
       .skill_box_wrap {
         .skill_box {
           width: 100%;
+          margin-bottom: 0rem;
           li {
             width: calc((100% / 3) - 20px);
           }
@@ -478,6 +479,7 @@ p {
 
 @media screen and (max-width: 600px) {
   .section_1 {
+    height: 95vh;
     .intro_wrap {
       width: 95%;
       .name_part {
@@ -490,8 +492,25 @@ p {
         }
       }
     }
+    .scroll_here {
+      .arrow_case {
+        height: 100px;
+        &:before {
+          width: 1px;
+        }
+        &:after {
+          width: 1px;
+        }
+      }
+      p {
+        font-size: 10px;
+        bottom: 61px;
+        left: -25px;
+      }
+    }
   }
   .section_2 {
+    margin: 0 auto 5rem;
     .employment_desc {
       .history {
         li {
@@ -510,28 +529,70 @@ p {
       }
       .tools_box_wrap {
         .tools_box {
-          justify-content: flex-start;
+          justify-content: space-between;
           li {
-            width: calc((100% / 3) - 10px);
-            height: 23vw;
+            width: calc((100% / 5) - 5px);
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             margin-bottom: 3.1vw;
-            margin-right: 3.1vw;
+            padding: 9px 0;
             &:nth-child(2),
             &:nth-child(3),
             &:nth-child(4),
             &:nth-child(5)
              {
               .img {
-                width: 47px;
+                width: 35px;
               }
             }
-            &:nth-child(3) {
-              margin-right: 0;
-            }
             .img {
-              width: 28px;
+              width: 20px;
             }
           }
+        }
+      }
+    }
+  }
+  .section_3 {
+    .works {
+      .works_box_wrap {
+        .works_box {
+          .company_name {
+            p {
+              font-size: 3.5vw;
+            }
+          }
+          .web_desc {
+            .role_box,
+            .web_box {
+              p {
+                font-size: 3.25vw;
+                padding: 15px 0 12px;
+              }
+            }
+          }
+          &:last-child {
+            margin-bottom: 2rem;
+          }
+        }
+      }
+      .link {
+        font-size: 14px;
+        &::before {
+          position: relative;
+          bottom: 2px;
+        }
+      }
+    }
+  }
+  .section_4 {
+    .contact {
+      .contact_way {
+        a {
+          width: 60px;
+          height: 60px;
         }
       }
     }

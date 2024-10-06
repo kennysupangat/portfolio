@@ -138,6 +138,7 @@ h2 {
   position: relative;
   left: 26px;
   margin-bottom: 2rem;
+  width: fit-content;
 }
 h2:before {
   content: "";
@@ -166,26 +167,10 @@ h3 {
   font-family: enfont-regular;
   font-size: 2rem;
   position: relative;
-  left: 24px;
   margin-bottom: 2rem;
-}
-h3:before {
-  content: "";
-  position: absolute;
-  left: -24px;
-  top: 5px;
-  width: 6px;
-  height: 22px;
-  background-color: #000;
-}
-h3:after {
-  content: "";
-  position: absolute;
-  left: -16px;
-  top: 0;
-  width: 6px;
-  height: 22px;
-  background-color: #000;
+  border-bottom: 1px solid;
+  width: fit-content;
+  padding: 0 0 2px;
 }
 
 .text_bold {
@@ -258,39 +243,41 @@ footer .footer_wrap .content_wrap .content ul li {
 footer .footer_wrap .content_wrap .content:nth-child(2) {
   margin-right: 8rem;
 }
-footer .footer_wrap .content_wrap .top_button {
+footer .footer_wrap .top_button {
   position: relative;
   bottom: 0;
 }
-footer .footer_wrap .content_wrap .top_button .arrow_case {
+footer .footer_wrap .top_button .arrow_case {
   overflow: hidden;
   height: 120px;
   position: relative;
   text-align: center;
 }
-footer .footer_wrap .content_wrap .top_button .arrow_case::before {
+footer .footer_wrap .top_button .arrow_case::before {
   content: "";
   display: block;
   position: absolute;
   bottom: 0;
-  width: 2px;
+  width: 1px;
   height: 100%;
   background: #000;
+  -webkit-animation: sc_ani02 1.5s infinite;
   animation: sc_ani02 1.5s infinite;
+  -webkit-animation-fill-mode: both;
   animation-fill-mode: both;
 }
-footer .footer_wrap .content_wrap .top_button .arrow_case::after {
+footer .footer_wrap .top_button .arrow_case::after {
   content: "";
   display: block;
   position: absolute;
-  width: 2px;
+  width: 1px;
   height: 15px;
   left: 4px;
   top: -1px;
   background-color: #000;
   transform: rotate(-35deg);
 }
-footer .footer_wrap .content_wrap .top_button p {
+footer .footer_wrap .top_button p {
   transform: rotate(90deg);
   font-size: 11px;
   position: relative;
@@ -298,46 +285,63 @@ footer .footer_wrap .content_wrap .top_button p {
   left: -15px;
 }
 
-@media screen and (max-width: 600px) {
-  header {
-    margin: 1rem auto;
+@media screen and (max-width: 625px) {
+  .main_section {
+    margin-bottom: 3rem;
   }
-  .en_header .header_wrap .main_menu {
+  header {
+    margin: 0 auto;
+  }
+  .en_header .header_wrap {
     display: none;
   }
+  .en_header .header_wrap_sp {
+    position: relative;
+    width: 90%;
+  }
+  .en_header .header_wrap_sp .menu_box {
+    z-index: 10;
+    position: fixed;
+    background-color: #000;
+    padding: 3vw 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    width: 12vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .en_header .header_wrap_sp .menu_box .menu_line {
+    width: 70%;
+    height: 1px;
+    background-color: #fff1d7;
+    margin-bottom: 2.25vw;
+  }
+  .en_header .header_wrap_sp .menu_box .menu_line:nth-child(3) {
+    margin-bottom: 0;
+  }
   h2 {
-    font-size: 2.4rem;
-    margin-bottom: 2rem;
+    font-size: 2rem;
+    margin-bottom: 1rem;
   }
   h2::before {
     height: 7px;
     width: 15px;
     left: -27px;
-    top: 9px;
+    top: 7px;
   }
   h2::after {
     height: 7px;
     width: 15px;
-    top: 18px;
+    top: 16px;
     left: -25px;
   }
   h3 {
-    font-size: 1.6rem;
-    width: -moz-fit-content;
+    font-size: 22px;
     width: fit-content;
-    left: 20px;
-    margin-bottom: 1.75rem;
-  }
-  h3::before {
-    width: 4px;
-    height: 20px;
-    left: -20px;
-  }
-  h3::after {
-    width: 4px;
-    height: 20px;
-    left: -14px;
-    top: -2px;
+    margin-bottom: 20px;
   }
   .text_bold {
     line-height: 1.5;
@@ -347,5 +351,39 @@ footer .footer_wrap .content_wrap .top_button p {
     font-size: 14px;
     line-height: 2;
     margin-bottom: 1rem;
+  }
+  footer {
+    margin: 5rem auto 0rem;
+  }
+  footer .footer_wrap {
+    justify-content: space-between;
+  }
+  footer .footer_wrap .content_wrap {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer_wrap .content_wrap .content {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  footer .footer_wrap .content_wrap .content ul li {
+    font-size: 14px;
+  }
+  footer .footer_wrap .content_wrap .content p {
+    font-size: 14px;
+    margin-bottom: 25px;
+  }
+  footer .footer_wrap .top_button .arrow_case {
+    height: 100px;
+  }
+  footer .footer_wrap .top_button .arrow_case::before {
+    width: 1px;
+  }
+  footer .footer_wrap .top_button .arrow_case::after {
+    width: 1px;
+  }
+  footer .footer_wrap .top_button p {
+    bottom: 50px;
+    left: -17px;
   }
 }/*# sourceMappingURL=common.css.map */
