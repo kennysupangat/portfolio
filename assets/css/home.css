@@ -6,6 +6,10 @@ p {
   font-family: enfont-regular;
 }
 
+section {
+  padding-top: 2rem;
+}
+
 .section_1 {
   position: relative;
   display: flex;
@@ -241,11 +245,11 @@ p {
   margin-right: 2rem;
 }
 .section_4 .contact .contact_way .linkedin {
-  background-image: url("/assets/images/linkedin_logo.webp");
+  background-image: url("../images/linkedin_logo.webp");
   background-size: 55%;
 }
 .section_4 .contact .contact_way .email {
-  background-image: url("/assets/images/email_logo.png");
+  background-image: url("../images/email_logo.png");
   background-size: 55%;
 }
 
@@ -394,7 +398,7 @@ p {
 }
 @media screen and (max-width: 600px) {
   .section_1 {
-    height: 95vh;
+    height: 88vh;
   }
   .section_1 .intro_wrap {
     width: 95%;
@@ -409,7 +413,7 @@ p {
     font-size: 5vw;
   }
   .section_1 .scroll_here .arrow_case {
-    height: 100px;
+    height: 115px;
   }
   .section_1 .scroll_here .arrow_case:before {
     width: 1px;
@@ -418,8 +422,8 @@ p {
     width: 1px;
   }
   .section_1 .scroll_here p {
-    font-size: 10px;
-    bottom: 61px;
+    font-size: 11px;
+    bottom: 70px;
     left: -25px;
   }
   .section_2 {
