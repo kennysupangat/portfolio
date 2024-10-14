@@ -34,12 +34,16 @@ section {
   height: 87vh;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
   .intro_wrap {
     background-color: $black;
     width: 80%;
     position: relative;
-    bottom: 6%;
+    bottom: 8%;
+
+    transform: translateX(-110%);
+    transition: transform .7s ease-in-out;
+    transition-delay: .3s;
     .name_part {
       padding: 7vw 5vw;
       h1 {
@@ -55,10 +59,16 @@ section {
       }
     }
   }
+  .intro_wrap_active {
+    transform: translateX(0);
+  }
   .scroll_here {
     position: absolute;
-    bottom: 0;
+    bottom: 8%;
     left: 5%;
+    opacity: 0%;
+    transition: .5s;
+    transition-delay: 1.5s;
     .arrow_case {
       overflow: hidden;
       height: 120px;
@@ -97,13 +107,14 @@ section {
       left: -27px;
     }
   }
+  .scroll_here_active {
+    opacity: 100%;
+  }
 }
 
 .section_2 {
   width: 90%;
   margin: 0 auto 10rem;
-  .profile_desc {
-  }
   .employment_desc {
     margin-bottom: 4rem;
     .history {
@@ -201,6 +212,46 @@ section {
           border-radius: 5px;
           background-color: grey;
           margin-bottom: 10px;
+          transform: scale(100%);
+          transition: .3s;
+          &:hover {
+            transform: scale(95%);
+          }
+        }
+        // Nexus Card
+        .nexus_card {
+          background-image: url(../images/nexus_card_thumb.png);
+          background-repeat: no-repeat;
+          background-position: center 0%;
+          background-size: 150%;
+        }
+        // JTrust
+        .jtrust {
+          background-image: url(../images/jtrust_thumb.png);
+          background-repeat: no-repeat;
+          background-position: center 0%;
+          background-size: 132%;
+        }
+        // Tasset
+        .tasset {
+          background-image: url(../images/tasset_thumb.png);
+          background-repeat: no-repeat;
+          background-position: center 0%;
+          background-size: 132%;
+        }
+        // Scinex Network
+        .scinex {
+          background-image: url(../images/scinex_thumb.png);
+          background-repeat: no-repeat;
+          background-position: center 0%;
+          background-size: 132%;
+        }
+        // Tokyo Summerland
+        .summerland {
+          background-image: url(../images/tokyosummerland_thumb.png);
+          background-repeat: no-repeat;
+          background-position: center 0%;
+          background-size: 107%;
         }
         .company_name {
           background-color: $black;
@@ -495,6 +546,7 @@ section {
       }
     }
     .scroll_here {
+      bottom: 0%;
       .arrow_case {
         height: 115px;
         &:before {

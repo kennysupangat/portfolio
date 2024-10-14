@@ -17,13 +17,16 @@ section {
   height: 87vh;
   width: 100%;
   margin: 0 auto;
-  margin-bottom: 15rem;
+  margin-bottom: 10rem;
 }
 .section_1 .intro_wrap {
   background-color: #000;
   width: 80%;
   position: relative;
-  bottom: 6%;
+  bottom: 8%;
+  transform: translateX(-110%);
+  transition: transform 0.7s ease-in-out;
+  transition-delay: 0.3s;
 }
 .section_1 .intro_wrap .name_part {
   padding: 7vw 5vw;
@@ -39,10 +42,16 @@ section {
   font-family: enfont-light;
   color: #fff1d7;
 }
+.section_1 .intro_wrap_active {
+  transform: translateX(0);
+}
 .section_1 .scroll_here {
   position: absolute;
-  bottom: 0;
+  bottom: 8%;
   left: 5%;
+  opacity: 0%;
+  transition: 0.5s;
+  transition-delay: 1.5s;
 }
 .section_1 .scroll_here .arrow_case {
   overflow: hidden;
@@ -80,6 +89,9 @@ section {
   position: relative;
   bottom: 4.5rem;
   left: -27px;
+}
+.section_1 .scroll_here_active {
+  opacity: 100%;
 }
 
 .section_2 {
@@ -173,6 +185,41 @@ section {
   border-radius: 5px;
   background-color: grey;
   margin-bottom: 10px;
+  transform: scale(100%);
+  transition: 0.3s;
+}
+.section_3 .works .works_box_wrap .works_box .main_kv:hover {
+  transform: scale(95%);
+}
+.section_3 .works .works_box_wrap .works_box .nexus_card {
+  background-image: url(../images/nexus_card_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 150%;
+}
+.section_3 .works .works_box_wrap .works_box .jtrust {
+  background-image: url(../images/jtrust_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 132%;
+}
+.section_3 .works .works_box_wrap .works_box .tasset {
+  background-image: url(../images/tasset_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 132%;
+}
+.section_3 .works .works_box_wrap .works_box .scinex {
+  background-image: url(../images/scinex_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 132%;
+}
+.section_3 .works .works_box_wrap .works_box .summerland {
+  background-image: url(../images/tokyosummerland_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 107%;
 }
 .section_3 .works .works_box_wrap .works_box .company_name {
   background-color: #000;
@@ -411,6 +458,9 @@ section {
   }
   .section_1 .intro_wrap .name_part .catchphrase {
     font-size: 5vw;
+  }
+  .section_1 .scroll_here {
+    bottom: 0%;
   }
   .section_1 .scroll_here .arrow_case {
     height: 115px;

@@ -55,6 +55,9 @@ section {
   align-items: center;
   margin: 0 auto;
   width: 90%;
+  transform: translateY(-220%);
+  transition: transform 0.5s ease-in-out;
+  transition-delay: 1s;
 }
 .en_header .header_wrap .main_menu a {
   font-family: enfont-regular;
@@ -97,6 +100,9 @@ section {
 }
 .en_header .header_wrap .main_menu a:hover::before {
   width: 20px;
+}
+.en_header .header_active {
+  transform: translateX(0%);
 }
 .en_header .header_wrap_sp {
   display: none;
@@ -321,14 +327,16 @@ footer .footer_wrap .top_button p {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: 0.3s;
+    transform: translateX(110%);
+    transition: 0.5s;
+    transition-delay: 1s;
   }
   .en_header .header_wrap_sp .menu_box .menu_line {
     width: 70%;
     height: 1px;
     background-color: #fff1d7;
     margin-bottom: 2.25vw;
-    transform: rotate(0deg);
+    transform: rotate(180deg);
     transition: 0.3s;
   }
   .en_header .header_wrap_sp .menu_box .menu_line:nth-child(3) {
@@ -347,13 +355,16 @@ footer .footer_wrap .top_button p {
     position: relative;
     bottom: 2vw;
   }
+  .en_header .header_wrap_sp .menu_line_active {
+    transform: translateX(0%);
+  }
   .en_header .header_wrap_sp .menu_display {
     width: 100vw;
     height: 100vh;
     position: fixed;
     z-index: 9;
     background-color: #000;
-    transform: translate(100%, 100%);
+    transform: translateX(100%);
     transition: 0.3s;
     display: flex;
     flex-direction: column;
@@ -368,7 +379,6 @@ footer .footer_wrap .top_button p {
     color: #fff1d7;
     font-size: 10vw;
     width: 90%;
-    padding: 6vw 0 0;
   }
   .en_header .header_wrap_sp .menu_display .menu_list a::after {
     content: "";
@@ -378,7 +388,7 @@ footer .footer_wrap .top_button p {
     background-color: #fff1d7;
     transition: 0.2s;
     transition-delay: 0.3s;
-    margin: 6vw 0;
+    margin: 8vw 0;
   }
   .en_header .header_wrap_sp .menu_display .lang_menu {
     padding: 10vw 0 0;
@@ -397,7 +407,7 @@ footer .footer_wrap .top_button p {
     padding-right: 8vw;
   }
   .en_header .header_wrap_sp .menu_active {
-    transform: translate(0%, 0%);
+    transform: translateX(0%);
   }
   .en_header .header_wrap_sp .menu_active .menu_list a::after {
     width: 100%;
@@ -429,7 +439,7 @@ footer .footer_wrap .top_button p {
   }
   .text_normal {
     font-size: 14px;
-    line-height: 2;
+    line-height: 1.8;
     margin-bottom: 1rem;
   }
   footer {
