@@ -61,7 +61,7 @@ section {
   width: calc(33.3333333333% - 20px);
   margin-bottom: 4rem;
 }
-.section_2 .works .works_box_wrap .works_box .main_kv {
+.section_2 .works .works_box_wrap .works_box .img_link .main_kv {
   width: 100%;
   height: 315px;
   border-radius: 5px;
@@ -70,82 +70,88 @@ section {
   transform: scale(100%);
   transition: 0.3s;
 }
-.section_2 .works .works_box_wrap .works_box .main_kv:hover {
+.section_2 .works .works_box_wrap .works_box .img_link .main_kv:hover {
   transform: scale(95%);
 }
-.section_2 .works .works_box_wrap .works_box .nexus_card {
+.section_2 .works .works_box_wrap .works_box .img_link .nexus_card {
   background-image: url(../images/nexus_card_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 150%;
 }
-.section_2 .works .works_box_wrap .works_box .jtrust {
+.section_2 .works .works_box_wrap .works_box .img_link .nihonhoshou {
+  background-image: url(../images/nihonhoshou_thumb.png);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 132%;
+}
+.section_2 .works .works_box_wrap .works_box .img_link .jtrust {
   background-image: url(../images/jtrust_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
-.section_2 .works .works_box_wrap .works_box .tasset {
+.section_2 .works .works_box_wrap .works_box .img_link .tasset {
   background-image: url(../images/tasset_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
-.section_2 .works .works_box_wrap .works_box .scinex {
+.section_2 .works .works_box_wrap .works_box .img_link .scinex {
   background-image: url(../images/scinex_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
-.section_2 .works .works_box_wrap .works_box .summerland {
+.section_2 .works .works_box_wrap .works_box .img_link .summerland {
   background-image: url(../images/tokyosummerland_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
-.section_2 .works .works_box_wrap .works_box .aiful_1 {
+.section_2 .works .works_box_wrap .works_box .img_link .aiful_1 {
   background-image: url(../images/aiful_1_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
-.section_2 .works .works_box_wrap .works_box .aiful_2 {
+.section_2 .works .works_box_wrap .works_box .img_link .aiful_2 {
   background-image: url(../images/aiful_2_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
-.section_2 .works .works_box_wrap .works_box .agsl {
+.section_2 .works .works_box_wrap .works_box .img_link .agsl {
   background-image: url(../images/agsl_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
-.section_2 .works .works_box_wrap .works_box .agmedical {
+.section_2 .works .works_box_wrap .works_box .img_link .agmedical {
   background-image: url(../images/agmedical_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
-.section_2 .works .works_box_wrap .works_box .aggroup {
+.section_2 .works .works_box_wrap .works_box .img_link .aggroup {
   background-image: url(../images/aggroup_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
-.section_2 .works .works_box_wrap .works_box .aifulbiz {
+.section_2 .works .works_box_wrap .works_box .img_link .aifulbiz {
   background-image: url(../images/aifulbiz_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
-.section_2 .works .works_box_wrap .works_box .lifecard_1 {
+.section_2 .works .works_box_wrap .works_box .img_link .lifecard_1 {
   background-image: url(../images/lifecard_1_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
-.section_2 .works .works_box_wrap .works_box .lifecard_2 {
+.section_2 .works .works_box_wrap .works_box .img_link .lifecard_2 {
   background-image: url(../images/lifecard_2_thumb.png);
   background-repeat: no-repeat;
   background-position: center 0%;
@@ -290,7 +296,7 @@ section {
   .section_2 .works .works_box_wrap .works_box {
     width: calc(50% - 20px);
   }
-  .section_2 .works .works_box_wrap .works_box .main_kv {
+  .section_2 .works .works_box_wrap .works_box .img_link .main_kv {
     height: 350px;
   }
 }
@@ -298,7 +304,7 @@ section {
   .section_1 .intro_wrap {
     width: 90%;
   }
-  .section_2 .works .works_box_wrap .works_box .main_kv {
+  .section_2 .works .works_box_wrap .works_box .img_link .main_kv {
     height: 25vw;
   }
 }
@@ -306,7 +312,7 @@ section {
   .section_2 .works .works_box_wrap .works_box {
     width: 100%;
   }
-  .section_2 .works .works_box_wrap .works_box .main_kv {
+  .section_2 .works .works_box_wrap .works_box .img_link .main_kv {
     height: 45vw;
   }
 }
