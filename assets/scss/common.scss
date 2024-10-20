@@ -51,10 +51,35 @@ $main_color: #fff1d7;
 // Header
 header {
     margin: 2rem auto;
-    
 }
 
-
+// Bread Crumb
+.bread_crumb {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    margin: 4rem auto;
+    border-top: 1px solid $black;
+    border-bottom: 1px solid $black;
+    padding: 2rem 0;
+    .bread_link {
+        display: flex;
+        flex-direction: row;
+        &::after {
+            content: "";
+            background-image: url(../../assets/images/arrow_light_right.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 8px;
+            height: 11px;
+            display: block;
+            margin: 0 2rem;
+            position: relative;
+            top: 1px;
+        }
+    }
+}
 section {
     max-width: 1920px   ;
 }
@@ -216,12 +241,12 @@ h3 {
 // EN Text
 .text_bold {
     font-family: $en-bold;
-    margin-bottom: 1.5rem;
+    margin-bottom: 15px;
     line-height: 2;
 }
 .text_normal {
     font-family: $en-regular;
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     line-height: 2;
 }
 
@@ -334,6 +359,37 @@ footer {
     }
     header {
         margin: 0 auto;
+    }
+    // Bread Crumb
+    .bread_crumb {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 4rem auto;
+        border-top: 1px solid $black;
+        border-bottom: 1px solid $black;
+        padding: 1rem 0;
+        .bread_link {
+            display: flex;
+            flex-direction: row;
+            font-size: 13px;
+            &::after {
+                content: "";
+                background-image: url(../../assets/images/arrow_light_right.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                width: 8px;
+                height: 11px;
+                display: block;
+                margin: 0 1.5rem;
+                position: relative;
+                top: 1px;
+            }
+        }
+        .bread_text {
+            font-size: 13px;
+        }
     }
     .en_header {
         .header_wrap {
