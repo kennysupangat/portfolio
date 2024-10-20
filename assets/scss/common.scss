@@ -67,7 +67,7 @@ header {
         flex-direction: row;
         &::after {
             content: "";
-            background-image: url(../../assets/images/arrow_light_right.png);
+            background-image: url(../../assets/images/arrow_light_right.webp);
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -375,7 +375,7 @@ footer {
             font-size: 13px;
             &::after {
                 content: "";
-                background-image: url(../../assets/images/arrow_light_right.png);
+                background-image: url(../../assets/images/arrow_light_right.webp);
                 background-position: center;
                 background-repeat: no-repeat;
                 background-size: cover;

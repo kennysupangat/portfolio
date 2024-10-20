@@ -74,85 +74,85 @@ section {
   transform: scale(95%);
 }
 .section_2 .works .works_box_wrap .works_box .img_link .nexus_card {
-  background-image: url(../images/nexus_card_thumb.png);
+  background-image: url(../images/nexus_card_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 150%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .nihonhoshou {
-  background-image: url(../images/nihonhoshou_thumb.png);
+  background-image: url(../images/nihonhoshou_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .jtrust {
-  background-image: url(../images/jtrust_thumb.png);
+  background-image: url(../images/jtrust_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .tasset {
-  background-image: url(../images/tasset_thumb.png);
+  background-image: url(../images/tasset_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .scinex {
-  background-image: url(../images/scinex_thumb.png);
+  background-image: url(../images/scinex_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 132%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .summerland {
-  background-image: url(../images/tokyosummerland_thumb.png);
+  background-image: url(../images/tokyosummerland_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .aiful_1 {
-  background-image: url(../images/aiful_1_thumb.png);
+  background-image: url(../images/aiful_1_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .aiful_2 {
-  background-image: url(../images/aiful_2_thumb.png);
+  background-image: url(../images/aiful_2_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .agsl {
-  background-image: url(../images/agsl_thumb.png);
+  background-image: url(../images/agsl_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .agmedical {
-  background-image: url(../images/agmedical_thumb.png);
+  background-image: url(../images/agmedical_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 107%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .aggroup {
-  background-image: url(../images/aggroup_thumb.png);
+  background-image: url(../images/aggroup_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .aifulbiz {
-  background-image: url(../images/aifulbiz_thumb.png);
+  background-image: url(../images/aifulbiz_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .lifecard_1 {
-  background-image: url(../images/lifecard_1_thumb.png);
+  background-image: url(../images/lifecard_1_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .lifecard_2 {
-  background-image: url(../images/lifecard_2_thumb.png);
+  background-image: url(../images/lifecard_2_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
@@ -199,7 +199,7 @@ section {
 }
 .section_2 .works .link::before {
   content: "";
-  background-image: url("/assets/images/arrow_right.png");
+  background-image: url("/assets/images/arrow_right.webp");
   background-repeat: no-repeat;
   background-size: contain;
   width: 10px;
