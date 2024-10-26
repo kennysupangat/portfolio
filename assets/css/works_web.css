@@ -60,6 +60,7 @@ section {
 }
 .section_2 .main_thumb_wrap .main_thumb img {
   max-width: 100%;
+  margin-bottom: 45px;
 }
 
 .section_active {

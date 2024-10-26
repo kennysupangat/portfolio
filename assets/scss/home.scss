@@ -221,42 +221,42 @@ section {
           }
           // Nexus Card
           .nexus_card {
-            background-image: url(../images/nexus_card_thumb.png);
+            background-image: url(../images/nexus_card_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 150%;
           }
           // JTrust
           .jtrust {
-            background-image: url(../images/jtrust_thumb.png);
+            background-image: url(../images/jtrust_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 132%;
           }
           // Tasset
           .tasset {
-            background-image: url(../images/tasset_thumb.png);
+            background-image: url(../images/tasset_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 132%;
           }
           // Scinex Network
           .scinex {
-            background-image: url(../images/scinex_thumb.png);
+            background-image: url(../images/scinex_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 132%;
           }
           // Nihon Hoshou
           .nihonhoshou {
-            background-image: url(../images/nihonhoshou_thumb.png);
+            background-image: url(../images/nihonhoshou_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 132%;
           }
           // Tokyo Summerland
           .summerland {
-            background-image: url(../images/tokyosummerland_thumb.png);
+            background-image: url(../images/tokyosummerland_thumb.webp);
             background-repeat: no-repeat;
             background-position: center 0%;
             background-size: 107%;
@@ -304,7 +304,7 @@ section {
       justify-content: end;
       &::before {
         content: "";
-        background-image: url("/assets/images/arrow_right.png");
+        background-image: url("/assets/images/arrow_right.webp");
         background-repeat: no-repeat;
         background-size: contain;
         width: 10px;
@@ -339,7 +339,7 @@ section {
         background-size: 55%;
       }
       .email {
-        background-image: url("../images/email_logo.png");
+        background-image: url("../images/email_logo.webp");
         background-size: 55%;
       }
     }

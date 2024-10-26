@@ -125,7 +125,7 @@ section {
   background-image: url(../images/agsl_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
-  background-size: 107%;
+  background-size: 103%;
 }
 .section_2 .works .works_box_wrap .works_box .img_link .agmedical {
   background-image: url(../images/agmedical_thumb.webp);
@@ -153,6 +153,12 @@ section {
 }
 .section_2 .works .works_box_wrap .works_box .img_link .lifecard_2 {
   background-image: url(../images/lifecard_2_thumb.webp);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 103%;
+}
+.section_2 .works .works_box_wrap .works_box .img_link .tokushima {
+  background-image: url(../images/tokushima_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
