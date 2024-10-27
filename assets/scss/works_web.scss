@@ -19,10 +19,6 @@ body {
     background-color: #fff1d7;
 }
 
-p {
-    font-family: enfont-regular;
-}
-
 section {
   padding-top: 2rem;
 }
@@ -68,15 +64,76 @@ section {
   opacity: 0;
   transition: .3s;
   transition-delay: 1.5s;
-  .main_thumb_wrap {
+  .works_desc {
+      width: 90%;
+      margin: 0 auto 40px;
+    .works_type {
+      font-size: 16px;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+    .name {
+      font-family: $ja-bold!important;
+      font-size: 30px;
+      margin-bottom: 4px;
+      font-family: $en-bold;
+    }
+    .type {
+      font-size: 14px;
+      margin-bottom: 50px;
+    }
+    .role {
+      margin-bottom: 20px;
+      p {
+       &:first-child {
+        font-family: $en-bold;
+        margin-bottom: 8px;
+       }
+      }
+    }
+    .url {
+      p {
+        font-family: $en-bold;
+        margin-bottom: 8px;
+      }
+      a {
+        transition: .3s;
+        text-decoration: underline;
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+  }
+  .main_img_wrap {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: center;
-    .main_thumb {
-        width: 1440px;
+    flex-direction: column;
+    .main_img_pc {
+      display: flex;
+      flex-direction: column;
+      .img_pc {
+        width: 100%;
+        margin-bottom: 60px;
         img {
-            max-width: 100%;
-            margin-bottom: 45px;
+          max-width: 100%;
         }
+      }
+    }
+    .main_img_sp {
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      .img_sp {
+        width: calc((100% / 3) - 40px);
+        img {
+          max-width: 100%;
+        }
+      }
     }
   }
 }
@@ -215,8 +272,18 @@ section {
 
 @media screen and (max-width: 850px) {
   .section_1 {
-    .intro_wrap {
-      .page_name {
+    margin: 0 auto 0;
+  }
+  .section_2 {
+    .works_desc {
+      width: 100%;
+    }
+    .main_img_wrap {
+      width: 100%;
+      .main_img_sp {
+        .img_sp {
+          width: calc((100% / 3) - 15px);
+        }
       }
     }
   }
@@ -272,6 +339,20 @@ section {
         &::before {
           position: relative;
           bottom: 2px;
+        }
+      }
+    }
+    .works_desc {
+      .name {
+        font-size: 25px;
+      }
+    }
+    .main_img_wrap {
+      .main_img_sp {
+        flex-direction: column;
+        .img_sp {
+          width: 100%;
+          margin-bottom: 40px;
         }
       }
     }

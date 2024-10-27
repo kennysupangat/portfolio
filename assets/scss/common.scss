@@ -85,7 +85,7 @@ section {
 }
 
 // EN Header
-.en_header {
+.header {
     font-family: $en-regular;
     width: 100%;
     max-width: 1920px;
@@ -97,7 +97,7 @@ section {
         align-items: center;
         margin: 0 auto;
         width: 90%;
-        transform: translateY(-220%);
+        transform: translateY(-300%);
         transition: transform .5s ease-in-out;
         transition-delay: 1s;
         .main_menu {
@@ -346,12 +346,22 @@ footer {
               position: relative;
               bottom: 3.75rem;
               left: -15px;
+              white-space: nowrap;
             }
         }
     }
 }
 
-
+@media screen and (max-width: 850px) {
+    footer {
+        .footer_wrap {
+            .content_wrap {
+                width: 100%;
+                justify-content: flex-start;
+            }
+        }
+    }
+}
 
 @media screen and (max-width: 625px) {
     .main_section {
@@ -384,14 +394,18 @@ footer {
                 display: block;
                 margin: 0 1.5rem;
                 position: relative;
-                top: 1px;
+                top: 0px;
             }
         }
         .bread_text {
             font-size: 13px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            width: 40vw;
+            white-space: nowrap;
         }
     }
-    .en_header {
+    .header {
         .header_wrap {
             display: none;
         }

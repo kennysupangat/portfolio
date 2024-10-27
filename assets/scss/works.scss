@@ -72,8 +72,9 @@ section {
     .works_box_wrap {
       display: flex;
       flex-direction: row;
+      justify-content: flex-start;
       flex-wrap: wrap;
-      justify-content: space-between;
+      gap: 25px;
       .works_box {
         width: calc((100% / 3) - 20px);
         margin-bottom: 4rem;
@@ -204,6 +205,7 @@ section {
           border-radius: 5px;
           margin-bottom: 10px;
           p {
+            font-family: $ja-bold;
             color: $main_color;
             font-size: 16px;
             padding: 15px 0;
@@ -416,6 +418,7 @@ section {
     .works {
       .works_box_wrap {
         .works_box {
+          margin-bottom: 2rem;
           .company_name {
             p {
               font-size: 3.5vw;
