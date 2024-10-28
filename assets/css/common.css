@@ -51,6 +51,7 @@ header {
 .bread_crumb .bread_link {
   display: flex;
   flex-direction: row;
+  transition: 0.3s;
 }
 .bread_crumb .bread_link::after {
   content: "";
@@ -64,6 +65,9 @@ header {
   margin: 0 2rem;
   position: relative;
   top: 1px;
+}
+.bread_crumb .bread_link:hover {
+  opacity: 0.7;
 }
 
 section {

@@ -12,7 +12,7 @@ section {
   align-items: center;
   height: 25vh;
   width: 100%;
-  margin: 0 auto 3rem;
+  margin: 0 auto 0;
 }
 .section_1 .intro_wrap {
   background-color: #000;
@@ -93,10 +93,11 @@ section {
 }
 .section_2 .main_img_wrap .main_img_pc {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 }
 .section_2 .main_img_wrap .main_img_pc .img_pc {
-  width: 100%;
+  width: calc(50% - 20px);
   margin-bottom: 60px;
 }
 .section_2 .main_img_wrap .main_img_pc .img_pc img {
