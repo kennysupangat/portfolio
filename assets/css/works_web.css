@@ -66,10 +66,10 @@ section {
   font-size: 14px;
   margin-bottom: 50px;
 }
-.section_2 .works_desc .role {
+.section_2 .works_desc .desc {
   margin-bottom: 20px;
 }
-.section_2 .works_desc .role p:first-child {
+.section_2 .works_desc .desc p:first-child {
   font-family: enfont-bold;
   margin-bottom: 8px;
 }
@@ -103,6 +103,12 @@ section {
 .section_2 .main_img_wrap .main_img_pc .img_pc img {
   max-width: 100%;
 }
+.section_2 .main_img_wrap .main_img_pc .img_pc_100 {
+  width: 100%;
+}
+.section_2 .main_img_wrap .main_img_pc .img_pc_100 img {
+  max-width: 100%;
+}
 .section_2 .main_img_wrap .main_img_sp {
   width: 100%;
   margin: 0 auto;
@@ -111,7 +117,8 @@ section {
   justify-content: space-between;
 }
 .section_2 .main_img_wrap .main_img_sp .img_sp {
-  width: calc(33.3333333333% - 40px);
+  width: calc(25% - 20px);
+  margin-bottom: 60px;
 }
 .section_2 .main_img_wrap .main_img_sp .img_sp img {
   max-width: 100%;
@@ -228,6 +235,11 @@ section {
 @media screen and (max-width: 850px) {
   .section_1 {
     margin: 0 auto 0;
+    height: 15vh;
+  }
+  .section_1 .intro_wrap .page_name h1 {
+    position: relative;
+    top: 6px;
   }
   .section_2 .works_desc {
     width: 100%;
@@ -235,8 +247,20 @@ section {
   .section_2 .main_img_wrap {
     width: 100%;
   }
+  .section_2 .main_img_wrap .main_img_pc {
+    flex-direction: column;
+  }
+  .section_2 .main_img_wrap .main_img_pc .img_pc {
+    width: 100%;
+  }
+  .section_2 .main_img_wrap .main_img_pc .img_sp {
+    width: calc(50% - 20px);
+  }
+  .section_2 .main_img_wrap .main_img_sp {
+    flex-wrap: wrap;
+  }
   .section_2 .main_img_wrap .main_img_sp .img_sp {
-    width: calc(33.3333333333% - 15px);
+    width: calc(50% - 20px);
   }
 }
 @media screen and (max-width: 600px) {
@@ -249,9 +273,10 @@ section {
     width: 95%;
   }
   .section_1 .intro_wrap .page_name {
-    padding: 9vw 5vw 5vw;
+    padding: 5vw 5vw 5vw;
   }
   .section_1 .intro_wrap .page_name h1 {
+    top: 4px;
     font-size: 10vw;
     line-height: 1.1;
   }
@@ -277,7 +302,7 @@ section {
     bottom: 2px;
   }
   .section_2 .works_desc .name {
-    font-size: 25px;
+    font-size: 24px;
   }
   .section_2 .main_img_wrap .main_img_sp {
     flex-direction: column;

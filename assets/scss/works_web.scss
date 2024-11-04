@@ -82,7 +82,7 @@ section {
       font-size: 14px;
       margin-bottom: 50px;
     }
-    .role {
+    .desc {
       margin-bottom: 20px;
       p {
        &:first-child {
@@ -122,6 +122,12 @@ section {
           max-width: 100%;
         }
       }
+      .img_pc_100 {
+        width: 100%;
+        img {
+          max-width: 100%;
+        }
+      }
     }
     .main_img_sp {
       width: 100%;
@@ -130,7 +136,8 @@ section {
       flex-direction: row;
       justify-content: space-between;
       .img_sp {
-        width: calc((100% / 3) - 40px);
+        width: calc((100% / 4) - 20px);
+        margin-bottom: 60px;
         img {
           max-width: 100%;
         }
@@ -274,6 +281,15 @@ section {
 @media screen and (max-width: 850px) {
   .section_1 {
     margin: 0 auto 0;
+    height: 15vh;
+    .intro_wrap {
+      .page_name {
+        h1 {
+          position: relative;
+          top: 6px;
+        }
+      }
+    }
   }
   .section_2 {
     .works_desc {
@@ -281,9 +297,21 @@ section {
     }
     .main_img_wrap {
       width: 100%;
-      .main_img_sp {
+      
+      .main_img_pc {
+        flex-direction: column;
+        .img_pc {
+          width: 100%;
+        }
         .img_sp {
-          width: calc((100% / 3) - 15px);
+          width: calc((100% / 2) - 20px);
+        }
+      }
+
+      .main_img_sp {
+        flex-wrap: wrap;
+        .img_sp {
+          width: calc((100% / 2) - 20px);
         }
       }
     }
@@ -301,8 +329,9 @@ section {
     .intro_wrap {
       width: 95%;
       .page_name {
-        padding: 9vw 5vw 5vw;
+        padding: 5vw 5vw 5vw;
         h1 {
+          top: 4px;
           font-size: 10vw;
           line-height: 1.1;
         }
@@ -345,7 +374,7 @@ section {
     }
     .works_desc {
       .name {
-        font-size: 25px;
+        font-size: 24px;
       }
     }
     .main_img_wrap {

@@ -164,6 +164,18 @@ section {
   background-position: center 0%;
   background-size: 103%;
 }
+.section_2 .works .works_box_wrap .works_box .img_link .aiful_web {
+  background-image: url(../images/aifulwebapp_thumb.webp);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 103%;
+}
+.section_2 .works .works_box_wrap .works_box .img_link .adidas_app {
+  background-image: url(../images/adidas_thumb.webp);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 103%;
+}
 .section_2 .works .works_box_wrap .works_box .company_name {
   background-color: #000;
   display: flex;
