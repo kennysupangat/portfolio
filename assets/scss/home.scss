@@ -305,7 +305,7 @@ section {
       justify-content: end;
       &::before {
         content: "";
-        background-image: url("/assets/images/arrow_right.webp");
+        background-image: url("../images/arrow_light_right.webp");
         background-repeat: no-repeat;
         background-size: contain;
         width: 10px;
