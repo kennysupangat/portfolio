@@ -164,8 +164,20 @@ section {
   background-position: center 0%;
   background-size: 103%;
 }
+.section_2 .works .works_box_wrap .works_box .img_link .tokushima_2 {
+  background-image: url(../images/tokushima_2_thumb.webp);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 103%;
+}
 .section_2 .works .works_box_wrap .works_box .img_link .aiful_web {
   background-image: url(../images/aifulwebapp_thumb.webp);
+  background-repeat: no-repeat;
+  background-position: center 0%;
+  background-size: 103%;
+}
+.section_2 .works .works_box_wrap .works_box .img_link .lifecard_app {
+  background-image: url(../images/lifecard_app_thumb.webp);
   background-repeat: no-repeat;
   background-position: center 0%;
   background-size: 103%;
